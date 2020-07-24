@@ -1,1 +1,4 @@
-jsproxy_config=x=>{__CONF__=x;};importScripts('conf.js')
+navigator.serviceWorker.register('/sw.js').then(reg => {
+  // sometime later…
+  reg.update();
+});
